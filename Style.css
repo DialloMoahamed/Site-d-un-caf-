@@ -1,0 +1,325 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 10%;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    z-index: 100;
+}
+.menu-icons{
+    width: 35px;
+    cursor: pointer;
+}
+.logo {
+    width: 100px;
+    margin-left: -10%;
+}
+button img {
+    width: 20px;
+    margin-left: 10px;
+}
+.menu{
+    display: flex;
+    align-items: center;
+}
+.menu ul {
+    margin-left: 25px;
+    display: flex;
+    list-style: none;
+}
+.menu ul a {
+    margin-left: 10px;
+    text-transform: capitalize;
+    font-size: 13px;
+    color: black;
+    text-decoration: none;
+    position: relative;
+}
+.menu ul a::after {
+    position: absolute !important;
+    left: 0 !important;
+    bottom: -5px;
+    content: "" !important;
+    width: 0%;
+    height: 2px !important;
+    background-color: #f7a800 !important;
+    transition: 0.1s ease-out !important;
+}
+.menu ul a:hover::after {
+    width: 100% !important;
+}
+.header-end {
+    display: flex;
+    align-items: center;
+}
+.header-end i {
+    margin-right: 20px !important;
+}
+button{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: 0;
+    padding: 8px 15px;
+    background-color: #C49A6D;
+    color: #fff;
+    text-transform: uppercase !important;
+    border-radius: 50px !important;
+    z-index: 1 !important;
+    transition: 0.2s ease-out !important;
+}
+button span {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    width: 100%;
+    text-align: center;
+}
+button :hover{
+    transform: scale(1.06);
+}
+.fa-crown{
+   position: relative;
+   padding: 20px; 
+}
+.login{
+    position: absolute;
+    right: -22px;
+    top: 60px;
+    width: 270px;
+    padding: 20px;
+    display: none !important;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(0,0,0,0.2);
+    border-radius: 6px;
+}
+.login button{
+    width: 100%;
+    background-color: #f7a800;
+}
+hr{
+    border:0 !important;
+    margin: 30px 0 !important;
+    background-color: #f7a800 !important;
+    width: 100% !important;
+    height: 1px !important;
+}
+.login p{
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+.login button:last-child {
+    background-color: transparent;
+    color: #f7a800;
+    border: 1px solid #f7a800;
+}
+.login ::after{
+    position: absolute !important;
+    right: 40px !important;
+    top: -8px !important;
+    content: "" !important;
+    height: 25px !important;
+    width: 25px !important;
+    z-index: -3 !important;
+    background-color: #fff !important;
+    box-shadow: 0 0 8px rgba(0,0,0,0.2) !important;
+    transform: rotate(50deg) !important;
+}
+.login :before{
+    position: absolute !important;
+    right: 40px !important;
+    top: -8px !important;
+    content: "" !important;
+    height: 15px !important;
+    width: 25px !important;
+    background-color: #fff !important;
+    transform: rotate(50deg) !important;
+}
+ .fa-crown:hover .login {
+    display: block !important;
+} 
+.home{
+    margin-top: 80px;
+    background: url(/posters-croissants-et-cafe-a-la-vapeur-en-forme-de-coeur.jpg.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: calc(100vh - 200px);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 20px;
+}
+.foods{
+    margin: 50px 0 !important;
+    padding: 0 10% !important;
+}
+h1{
+    font-size: 40px !important;
+    text-align: center !important;
+    text-transform: uppercase !important;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
+}
+.foods p{
+    text-align: center;
+    margin-top: 15px !important;
+    margin-bottom: 25px !important;
+
+}
+.foods-list {
+    display: flex !important;
+    justify-content: space-between !important;
+}
+.foods-list img{
+    box-shadow: 0 0 9px rgba(0,0,0,0.1);
+    width: 350px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+h3{
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.foods-list .box{
+    transition: 0.5s ease-out;
+    cursor: pointer;
+}
+.foods-list .box :hover{
+    transform: scale(1.05);
+}
+.fidelity-prog{
+    margin: 35px 0;
+    height: 350px;
+    width: 100%;
+    background: url(images/img8.png);
+    background-position: center;
+    background-size: cover;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.fidelity-prog div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.fidelity-prog button{
+    margin-top: 25px;
+    background-color: #f7a800;
+
+}
+.fidelity-prog .div1{
+    width: 300px;
+}
+.fidelity-prog .div2{
+    width: 350px;
+    margin-top: 25px;
+}
+.fidelity-prog .div3{
+    width: 410px;
+    
+}
+.fidelity-prog img{
+    width: 100%;
+}
+.little-food{
+    padding: 0.10% !important;
+
+}
+.little-food img{
+    width: 220px !important;
+}
+ .little-food-box{
+    margin: 50px 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    height: 280px !important;
+} 
+ .little-food-box .box{
+    background-color: #fbf5ee;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1) !important;
+    border-radius: 18px !important;
+    padding: 20px !important;
+    transition: 0.25s !important;
+    height: 100%;
+} 
+ .little-food-box .box:hover{
+    transform: scale(0.9) !important;
+} 
+footer{
+    background-color: black;
+    color: #fff;
+    margin-top: 20px !important;
+    padding: 25px 10% !important;
+
+}
+footer p {
+    font-size: 15px !important;
+}
+.icons-social{
+    margin: 25px 0 !important;
+}
+.icons-social i {
+    margin-right: 20px !important;
+    font-size: 20px !important;
+}
+footer img{
+    margin-top: 20px !important;
+    border: 1px solid #fff !important;
+    height: 50px !important;
+    cursor: pointer !important;
+}
+footer img:last-child{
+    margin-left: 10px !important;
+}
+footer .div2{
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+}
+footer .div2 h3{
+    margin-bottom: 10px !important;
+
+}
+footer .div2 ul {
+    display: flex !important;
+    flex-direction: column !important;
+}
+footer .div2 ul a {
+    font-size: 13px !;
+    color: #fff;
+    text-decoration: 0;
+    margin-bottom: 5px !important;
+    transition: 0.5s !important;
+}
+footer .div2 ul a:hover{
+    letter-spacing: 0.5px !important;
+}
+footer .div3{
+    text-align: center !important;
+}
+footer .div3 p:first-child{
+    font-size: 13px !important;
+}
+footer .div3 p:last-child{
+    font-size: 12px !important;
+    color: #999 !important;
+    margin-top: 10px !important;
+}
